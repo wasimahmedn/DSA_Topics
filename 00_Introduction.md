@@ -1,80 +1,80 @@
-#Graphs
+# Graphs
 Graphs are non-linear data startuctures. vertexes and edges are main components of the graphs.
 
 
 A graph with N vertexes can have N-1 number of graphs.
 
 
-##Types Of Graph
-####1. Null Graph
+## Types Of Graph
+#### 1. Null Graph
 A graph is known as a null graph if there are no edges in the graph.
 
-####2. Trivial Graph
+#### 2. Trivial Graph
 Graph having only a single vertex, it is also the smallest graph possible.
 ![Alt text](image.png)
  
 
-####3. Undirected Graph
+#### 3. Undirected Graph
 A graph in which edges do not have any direction. That is the nodes are unordered pairs in the definition of every edge. 
 
-####4. Directed Graph
+#### 4. Directed Graph
 A graph in which edge has direction. That is the nodes are ordered pairs in the definition of every edge.
 ![Alt text](image-1.png)
 
 
 
-####5. Connected Graph
+#### 5. Connected Graph
 The graph in which from one node we can visit any other node in the graph is known as a connected graph. 
 
-####6. Disconnected Graph
+#### 6. Disconnected Graph
 The graph in which at least one node is not reachable from a node is known as a disconnected graph.
 ![Conncted and Disconnected Graph](image-3.png)
-####7. Regular Graph
+#### 7. Regular Graph
 The graph in which the degree of every vertex is equal to K is called K regular graph.
 
-####8. Complete Graph
+#### 8. Complete Graph
 The graph in which from each node there is an edge to each other node.
 ![Regular and Complete Graphs](image-2.png)
 .
 
-####9. Cycle Graph
+#### 9. Cycle Graph
 The graph in which the graph is a cycle in itself, the degree of each vertex is 2. 
 
-####10. Cyclic Graph
+#### 10. Cyclic Graph
 A graph containing at least one cycle is known as a Cyclic graph.
 ![Cycle and Cyclic Graph](image-4.png)
 
 
-####11. Directed Acyclic Graph
+#### 11. Directed Acyclic Graph
 A Directed Graph that does not contain any cycle. 
 
-####12. Bipartite Graph
+#### 12. Bipartite Graph
 A graph in which vertex can be divided into two sets such that vertex in each set does not contain any edge between them.
 
 ![Directed Acyclic and Bipartite Graph](image-5.png)
 
-####13. Weighted Graph
+#### 13. Weighted Graph
 
  A graph in which the edges are already specified with suitable weight is known as a weighted graph. 
  Weighted graphs can be further classified as directed weighted graphs and undirected weighted graphs. 
 
-##Representation of Graphs
+## Representation of Graphs
 There are two ways to store a graph:
 
 - Adjacency Matrix
 - Adjacency List
 
-#####Adjucency Matrix: 
+##### Adjucency Matrix: 
 For the graph with N nodes, We need to create the matrix of size NxN with all 0's. To denote the edge between 2 vertices, udpate the value 1 at adjMat[v][u]. 
 ![Adjucency Matrix](image-6.png)
 
-#####Adjucency List:
+##### Adjucency List:
 For the graph with N nodes, Create an array of size N, each index pointing to the List. Update the list with all the nodes connected to the respective node.
 ![Adjucency List](image-7.png)
 
 
 
-####Code to update the adjucency matrix.
+#### Code to update the adjucency matrix.
 ```python
 class AdjMatrix:
     def __init__(self,num_vertices:int)->None:
