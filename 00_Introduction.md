@@ -13,7 +13,7 @@ A graph is known as a null graph if there are no edges in the graph.
 ### 2. Trivial Graph
 
 Graph having only a single vertex, it is also the smallest graph possible.
-![Alt text](image.png)
+![Alt text](image.png){width:200px;}
 
 ### 3. Undirected Graph
 
